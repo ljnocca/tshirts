@@ -102,3 +102,11 @@ MEDIA QUERIES
 		width: 100%;
 	}
 }
+
+
+/*************
+INTERACTIVE CSS
+**************/
+.selector:hover{
+	background: blue;
+}
