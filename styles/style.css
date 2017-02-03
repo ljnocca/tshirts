@@ -72,18 +72,35 @@ p{
 #third .fa-square{
 	color:orange;
 }
+#fourth .fa-square{
+	color:green;
+}
+#fith .fa-square{
+	color:orange;
+}
+#sixth .fa-square{
+	color:blue;
+}
 
 
 /*************
 BOTTOM TEXT
 **************/
+.bottom_row{
+	display: inline-block
+	margin: 0 auto;
+}
 .sentence{
+	width: 70%;
 	color: blue;
+	font-size: 30px;
 }
 .price{
+	width: 30%;
 	color: blue;
 	text-align: right;
 	font-weight: bold;
+	font-size: 30px;
 }
 
 
@@ -109,4 +126,25 @@ INTERACTIVE CSS
 **************/
 .selector:hover{
 	background: blue;
+}
+.outerselector{
+	position: relative;
+}
+.sizes{
+	position: absolute;
+	height: 200%;
+	width: 20%;
+	background: white;
+	border: 1px solid blue;
+	bottom: 100%;
+	right: 40%;
+}
+.colors{
+	position: absolute;
+	height: 200%;
+	width: 20%;
+	background: white;
+	border: 1px solid blue;
+	bottom: 100%;
+	right: 20%;
 }
