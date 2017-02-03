@@ -7,7 +7,6 @@
 MAIN OUTER DIV
 **************/
 .outer{
-	height: 350px;
 	width: 33.33%;
 	border: 1px solid blue;
 	display: inline-block;
@@ -64,6 +63,11 @@ p{
 	width: 49%;
 	font-size: 16px;
 }
+
+
+/*************
+BOTTOM TEXT
+**************/
 .sentence{
 	color: blue;
 }
@@ -71,4 +75,21 @@ p{
 	color: blue;
 	text-align: right;
 	font-weight: bold;
+}
+
+
+/*************
+MEDIA QUERIES
+**************/
+@media (max-width: 768px){
+	.outer{
+		width: 50%;
+	}
+}
+
+@media (max-width: 375px){
+	.outer{
+		display: block;
+		width: 100%;
+	}
 }
