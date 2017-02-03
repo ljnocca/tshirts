@@ -8,7 +8,7 @@ MAIN OUTER DIV
 **************/
 .outer{
 	width: 33.33%;
-	border: 1px solid blue;
+	border: 3px solid #47a3da;
 	display: inline-block;
 }
 
@@ -47,14 +47,14 @@ BOTTOM BOXES
 	width: 20%;
 	height: 50px;
 	font-size: 24px;
-	border-top: 1px solid blue;
-	border-right: 1px solid blue;
-	border-bottom: 1px solid blue;
+	border-top: 1px solid #47a3da;
+	border-right: 1px solid #47a3da;
+	border-bottom: 1px solid #47a3da;
 	text-align: center;
 	padding: 2%;
 }
 .selector p{
-	font-size: 10pt;
+	font-size: 13pt;
 	font-weight: bold;
 	margin: 0;
 }
@@ -62,9 +62,10 @@ p{
 	display: inline-block;
 	width: 49%;
 	font-size: 16px;
+	color: #47a3da;
 }
 #first .fa-square{
-	color: blue;
+	color: #47a3da;
 }
 #second .fa-square{
 	color: pink;
@@ -79,7 +80,7 @@ p{
 	color:orange;
 }
 #sixth .fa-square{
-	color:blue;
+	color:#47a3da;
 }
 
 
@@ -92,12 +93,12 @@ BOTTOM TEXT
 }
 .sentence{
 	width: 70%;
-	color: blue;
+	color: #47a3da;
 	font-size: 30px;
 }
 .price{
 	width: 30%;
-	color: blue;
+	color: #47a3da;
 	text-align: right;
 	font-weight: bold;
 	font-size: 30px;
@@ -125,7 +126,8 @@ MEDIA QUERIES
 INTERACTIVE CSS
 **************/
 .selector:hover{
-	background: blue;
+	background: #47a3da;
+	color: white;
 }
 .outerselector{
 	position: relative;
@@ -135,16 +137,18 @@ INTERACTIVE CSS
 	height: 200%;
 	width: 20%;
 	background: white;
-	border: 1px solid blue;
+	border: 1px solid #47a3da;
 	bottom: 100%;
 	right: 40%;
+	opacity: 0;
 }
 .colors{
 	position: absolute;
 	height: 200%;
 	width: 20%;
 	background: white;
-	border: 1px solid blue;
+	border: 1px solid #47a3da;
 	bottom: 100%;
 	right: 20%;
+	opacity: 0;
 }
