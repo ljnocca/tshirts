@@ -63,6 +63,15 @@ p{
 	width: 49%;
 	font-size: 16px;
 }
+#first .fa-square{
+	color: blue;
+}
+#second .fa-square{
+	color: pink;
+}
+#third .fa-square{
+	color:orange;
+}
 
 
 /*************
