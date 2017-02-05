@@ -47,11 +47,11 @@ BOTTOM BOXES
 	width: 20%;
 	height: 50px;
 	font-size: 24px;
-	border-top: 1px solid #47a3da;
-	border-right: 1px solid #47a3da;
-	border-bottom: 1px solid #47a3da;
+	border-top: 3px solid #47a3da;
+	border-right: 3px solid #47a3da;
+	border-bottom: 3px solid #47a3da;
 	text-align: center;
-	padding: 2%;
+	padding-top: 2%;
 }
 .selector p{
 	font-size: 13pt;
@@ -62,8 +62,11 @@ p{
 	display: inline-block;
 	width: 49%;
 	font-size: 16px;
-	color: #47a3da;
 }
+.outerselector:first-child, .outerselector:nth-child(2), .outerselector:nth-child(3), .outerselector:nth-child(5){
+	color:#47a3da;
+}
+
 #first .fa-square{
 	color: #47a3da;
 }
@@ -129,26 +132,34 @@ INTERACTIVE CSS
 	background: #47a3da;
 	color: white;
 }
-.outerselector{
+.sizes{
 	position: relative;
 }
-.sizes{
-	position: absolute;
-	height: 200%;
-	width: 20%;
-	background: white;
-	border: 1px solid #47a3da;
-	bottom: 100%;
-	right: 40%;
-	opacity: 0;
+.sizes:hover > .sizepop{
+	opacity: 1;
+	cursor: pointer;
 }
-.colors{
+.sizepop{
 	position: absolute;
-	height: 200%;
-	width: 20%;
+	height: 200px;
+	width: 100px;
 	background: white;
-	border: 1px solid #47a3da;
-	bottom: 100%;
-	right: 20%;
+	border: 3px solid #47a3da;
 	opacity: 0;
+	transform: translateY(-120%);
+	transition: 1s all ease;
+	font-size: 12px;
+	color: #47a3da;
 }
+span{
+	color: #47a3da;
+	background: url(https://tympanus.net/Blueprints/ProductGridLayout/images/tshirt.svg) no-repeat;
+	background-size: 100%;
+	font-size: 12px;
+	display: block;
+	height: 25%;
+	width: 60px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+
