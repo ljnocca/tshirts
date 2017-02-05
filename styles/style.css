@@ -51,12 +51,13 @@ BOTTOM BOXES
 	border-right: 3px solid #47a3da;
 	border-bottom: 3px solid #47a3da;
 	text-align: center;
-	padding-top: 2%;
+	padding: 2%;
+	margin: 0 auto;
 }
 .selector p{
 	font-size: 13pt;
 	font-weight: bold;
-	margin: 0;
+	margin: 0 auto;
 }
 p{
 	display: inline-block;
@@ -71,16 +72,16 @@ p{
 	color: #47a3da;
 }
 #second .fa-square{
-	color: pink;
+	color: #e577aa;
 }
 #third .fa-square{
-	color:orange;
+	color: #e5b178;
 }
 #fourth .fa-square{
-	color:green;
+	color: #7abe93;
 }
 #fith .fa-square{
-	color:orange;
+	color: #e5b178;
 }
 #sixth .fa-square{
 	color:#47a3da;
@@ -132,7 +133,7 @@ INTERACTIVE CSS
 	background: #47a3da;
 	color: white;
 }
-.sizes{
+.sizes, .colors{
 	position: relative;
 }
 .sizes:hover > .sizepop{
@@ -162,4 +163,42 @@ span{
 	line-height: 40px;
 	margin: 0 auto;
 }
+
+span .L{
+	width:90%;
+}
+span .M{
+	width:80%;
+}
+span .S{
+	width:70%;
+}
+
+.colors:hover > .colorpop{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.colorpop{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background: white;
+	border: 3px solid #47a3da;
+	opacity: 0;
+	transform: translateY(-140%);
+	transition: 1s all ease;
+	font-size: 40px;
+}
+#first .mini_pink, #second .mini_pink, #third .mini_pink, #fourth .mini_pink, #fith .mini_pink, #sixth .mini_pink{
+	color: #e577aa;
+}
+#first .mini_orange, #second .mini_orange, #third .mini_orange, #fourth .mini_orange, #fith .mini_orange, #sixth .mini_orange{
+	color: #e5b178;
+}
+#first .mini_green, #second .mini_green, #third .mini_green, #fourth .mini_green, #fith .mini_green, #sixth .mini_green{
+	color: #7abe93;
+}
+
+
 
