@@ -3,11 +3,19 @@
   font-size: 0;
 }
 
+/*************
+MAIN OUTER DIV
+**************/
 .outer{
-	height: 450px;
-	width: 450px;
-	border: 1px solid blue;
+	width: 33.33%;
+	border: 3px solid #47a3da;
+	display: inline-block;
 }
+
+
+/*************
+T-SHIRT DIVS
+**************/
 .outertshirt{
 	margin: 0 auto;
 	max-width: 100%;
@@ -16,11 +24,21 @@
 .tshirt{
 	max-width: 100%;
 	margin: 0 auto;
+	padding: 8px;
 }
+
+
+/*************
+FLIP DIV
+**************/
 .flipper{
 
 }
 
+
+/*************
+BOTTOM BOXES
+**************/
 .outerselector{
 	width: 100%;
 }
@@ -29,22 +47,158 @@
 	width: 20%;
 	height: 50px;
 	font-size: 24px;
-	border: 1px solid blue;
+	border-top: 3px solid #47a3da;
+	border-right: 3px solid #47a3da;
+	border-bottom: 3px solid #47a3da;
+	text-align: center;
+	padding: 2%;
+	margin: 0 auto;
 }
 .selector p{
-	font-size: 10pt;
+	font-size: 13pt;
 	font-weight: bold;
+	margin: 0 auto;
 }
 p{
 	display: inline-block;
 	width: 49%;
 	font-size: 16px;
 }
+.outerselector:first-child, .outerselector:nth-child(2), .outerselector:nth-child(3), .outerselector:nth-child(5){
+	color:#47a3da;
+}
+
+#first .fa-square{
+	color: #47a3da;
+}
+#second .fa-square{
+	color: #e577aa;
+}
+#third .fa-square{
+	color: #e5b178;
+}
+#fourth .fa-square{
+	color: #7abe93;
+}
+#fith .fa-square{
+	color: #e5b178;
+}
+#sixth .fa-square{
+	color:#47a3da;
+}
+
+
+/*************
+BOTTOM TEXT
+**************/
+.bottom_row{
+	display: inline-block
+	margin: 0 auto;
+}
 .sentence{
-	color: blue;
+	width: 70%;
+	color: #47a3da;
+	font-size: 30px;
 }
 .price{
-	color: blue;
+	width: 30%;
+	color: #47a3da;
 	text-align: right;
 	font-weight: bold;
+	font-size: 30px;
 }
+
+
+/*************
+MEDIA QUERIES
+**************/
+@media (max-width: 768px){
+	.outer{
+		width: 50%;
+	}
+}
+
+@media (max-width: 375px){
+	.outer{
+		display: block;
+		width: 100%;
+	}
+}
+
+
+/*************
+INTERACTIVE CSS
+**************/
+.selector:hover{
+	background: #47a3da;
+	color: white;
+}
+.sizes, .colors{
+	position: relative;
+}
+.sizes:hover > .sizepop{
+	opacity: 1;
+	cursor: pointer;
+}
+.sizepop{
+	position: absolute;
+	height: 200px;
+	width: 100px;
+	background: white;
+	border: 3px solid #47a3da;
+	opacity: 0;
+	transform: translateY(-120%);
+	transition: 1s all ease;
+	font-size: 12px;
+	color: #47a3da;
+}
+span{
+	color: #47a3da;
+	background: url(https://tympanus.net/Blueprints/ProductGridLayout/images/tshirt.svg) no-repeat;
+	background-size: 100%;
+	font-size: 12px;
+	display: block;
+	height: 25%;
+	width: 60px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+
+span .L{
+	width:90%;
+}
+span .M{
+	width:80%;
+}
+span .S{
+	width:70%;
+}
+
+.colors:hover > .colorpop{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.colorpop{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background: white;
+	border: 3px solid #47a3da;
+	opacity: 0;
+	transform: translateY(-140%);
+	transition: 1s all ease;
+	font-size: 40px;
+}
+#first .mini_pink, #second .mini_pink, #third .mini_pink, #fourth .mini_pink, #fith .mini_pink, #sixth .mini_pink{
+	color: #e577aa;
+}
+#first .mini_orange, #second .mini_orange, #third .mini_orange, #fourth .mini_orange, #fith .mini_orange, #sixth .mini_orange{
+	color: #e5b178;
+}
+#first .mini_green, #second .mini_green, #third .mini_green, #fourth .mini_green, #fith .mini_green, #sixth .mini_green{
+	color: #7abe93;
+}
+
+
+
