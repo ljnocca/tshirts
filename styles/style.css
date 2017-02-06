@@ -20,6 +20,7 @@ T-SHIRT DIVS
 	margin: 0 auto;
 	max-width: 100%;
 	text-align: center;
+	position: relative;
 }
 .tshirt{
 	max-width: 100%;
@@ -32,7 +33,18 @@ T-SHIRT DIVS
 FLIP DIV
 **************/
 .flipper{
-
+	width: 26px;
+	height: 26px;
+	border: 3px solid #47a3da;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	background: white;
+	font-size: 20px;
+}
+.fa-repeat{
+	font-size: 50px;
+	color: #47a3da;
 }
 
 
@@ -198,6 +210,12 @@ span .S{
 }
 #first .mini_green, #second .mini_green, #third .mini_green, #fourth .mini_green, #fith .mini_green, #sixth .mini_green{
 	color: #7abe93;
+}
+
+.flipper>.fa-repeat:hover{
+	background: #47a3da;
+	color: white;
+	cursor: pointer;
 }
 
 
